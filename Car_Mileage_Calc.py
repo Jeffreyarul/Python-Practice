@@ -6,7 +6,7 @@ def bonus(mil):
     if mil > 15 :
         money = 1000
     elif mil > 10:
-        money = 500
+        money = 550
     else:
         money =200        
     return money
