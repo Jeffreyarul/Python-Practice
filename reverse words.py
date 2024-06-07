@@ -1,6 +1,6 @@
 def reversewords(sentence):
     words = sentence.split()  
-    reversedwords = [word[::-1] for word in words] 
+    reversedwords=[word[::-1] for word in words] 
     reversedsentence = ' '.join(reversedwords) 
     return reversedsentence
 
