@@ -7,7 +7,7 @@ class Rectangle:
     
     def calc_Area(self):
         self.area = self.length * self.width
-
+        return self.area
     def calc_peri(self):
         self.peri = 2*(self.length+self.width)
     
