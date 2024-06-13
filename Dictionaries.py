@@ -1,27 +1,29 @@
-class Shape:
-    def __init__(self,colour,opacity,a,b):
-        self.colour=colour
-        self.opacity=opacity
-        self.centre=(a,b)
-    def change_colour(self,colour):
-        self.colour=colour
-    def display(self):
-        print('mycolor',self.colour)
-        print('myopacity',self.opacity)
-        print('my x coordinate',self.centre[0])
-        print('my y coordinate',self.centre[1])
+# inventory={"gold":500,
+#            "pouch":['f','t','g'],
+#            "backpack":['x','b','r']
+# }
+# inventory['pocket']=['s','s','t']
+# inventory['backpack'].sort()
+# inventory['backpack'].remove('b')
+# inventory['gold']+=50
+# print(inventory)
 
-class Circle(Shape):
-    def __init__(self,color, opacity, a, b, radius):
-        Shape.__init__(self, color, opacity, a, b)
-        self.radius=radius
-
-
-
-circle=Circle('red',2,0,0, 10)
-rect=Shape('blue',1,5,8)
-circle.change_colour('green')
-circle.display()
-rect.display()
-
+Prices={'banana':4,
+        'apple':2,
+        'orange':1.5,
+        'pear':3
+}
+print(Prices)
+stock={
+    'banana':100,
+    'apple':150,
+    'orange':250,
+    'pear':325
+}
+total=0
+for i,j in Prices.items():
+    for x,y in stock.items():
+        if i==x:
+            total+=j*y
+            print(total)
 

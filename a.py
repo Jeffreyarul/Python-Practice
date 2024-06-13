@@ -29,6 +29,8 @@ class Employee:
         print(f"TAX: {tax}")
 
 class Manager(Employee):
+    def __init__(self,name):
+        super().__init__(name)
     def calculate_gross_salary(self, basic_salary):
         da_pay = basic_salary * 0.95
         hra = basic_salary * 0.20
@@ -36,6 +38,8 @@ class Manager(Employee):
         return gross_salary
 
 class Engineer(Employee):
+    def __init__(self,name):
+        super().__init__(name)
     def calculate_gross_salary(self, basic_salary):
         da_pay = basic_salary * 0.80
         hra = basic_salary * 0.15
