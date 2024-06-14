@@ -18,6 +18,7 @@ class Car:
 
 def main():
     venue=Car(3000,35)
+    # print(venue.dist)
     i20=Car(10000,55)
     venue.mileage()
     print(venue.mil)

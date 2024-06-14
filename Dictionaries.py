@@ -7,7 +7,11 @@
 # inventory['backpack'].remove('b')
 # inventory['gold']+=50
 # print(inventory)
+import numpy as np
 
+l = [1, 2, 3, 4]
+l = np.array(l)
+print(type(l))
 Prices={'banana':4,
         'apple':2,
         'orange':1.5,
@@ -21,9 +25,7 @@ stock={
     'pear':325
 }
 total=0
-for i,j in Prices.items():
-    for x,y in stock.items():
-        if i==x:
-            total+=j*y
-            print(total)
+for i in Prices.keys():
+    total+=Prices[i]*stock[i]
+print(total)
 
